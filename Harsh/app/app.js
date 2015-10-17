@@ -15,10 +15,10 @@
                 controller: 'ReservationsController',
                 controllerAs: 'reservationsVm'
             })
-            .when('/employees/:employeeId', {
-                templateUrl: 'employee-detail.tmpl.html',
-                controller: 'EmployeeDetailController',
-                controllerAs: 'empDetailVm'
+            .when('/reservations/:resId', {
+                templateUrl: 'app/views/reservation-detail.tmpl.html',
+                controller: 'ReservationDetailController',
+                controllerAs: 'resDetailVm'
             })
             .when('/seating', {
                 templateUrl: 'pictures.tmpl.html',

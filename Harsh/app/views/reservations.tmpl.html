@@ -27,8 +27,9 @@
             <td>{{res.phone}}</td>
             <td>{{res.waitStatus}}</td>
             <td>{{res.tableId}}</td>
+            <td><a ng-href="#/reservations/{{res.id}}"><span class="glyphicon glyphicon-zoom-in"></span></a></td>
             <td>
-                <button class="btn btn-primary" title="Open Details">
+                <button ng-click="go('#/reservations/{{res.id}}')" class="btn btn-primary" title="Open Details">
                     <span class="glyphicon glyphicon-share"></span>
                     <span class="btn-text">Details</span>
                 </button>

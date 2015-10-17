@@ -1,0 +1,102 @@
+<div class="container">
+    <h3>Reservation</h3>
+    <form>
+        <div class="form-group">
+            <label class="col-md-2 control-label">ID</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.id}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.name}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Email</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.email}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Occasion</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.occasion}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Party Size</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.partySize}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Date</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.time | date :'medium'}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Is Waiting?</label>
+                <div class="col-md-10">
+                    <p class="form-control-static">{{resDetailVm.reservation.waitStatus}}</p>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Table ID</label>
+            <div class="col-md-10">
+                <p class="form-control-static">{{resDetailVm.reservation.tableId}}</p>
+            </div>
+        </div>
+    </form>
+
+   <!-- <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Confirmation No.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Occasion</th>
+            <th>#</th>
+            <th>Date</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Table#</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="res in reservationsVm.reservations">
+            <td>{{res.id}}</td>
+            <td>{{res.name}}</td>
+            <td>{{res.email}}</td>
+            <td>{{res.occasion}}</td>
+            <td>{{res.partySize}}</td>
+            <td>{{res.time}}</td>
+            <td>{{res.phone}}</td>
+            <td>{{res.waitStatus}}</td>
+            <td>{{res.tableId}}</td>
+            <td>
+                <button class="btn btn-primary" title="Open Details">
+                    <span class="glyphicon glyphicon-share"></span>
+                    <span class="btn-text">Details</span>
+                </button>
+            </td>
+        </tr>
+
+
+
+        </tbody>
+
+    </table>
+-->
+</div>
