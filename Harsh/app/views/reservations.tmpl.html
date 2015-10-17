@@ -1,0 +1,44 @@
+<div class="container">
+    <h3>Reservations</h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Confirmation No.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Occasion</th>
+            <th>#</th>
+            <th>Date</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Table#</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="res in reservationsVm.reservations">
+            <td>{{res.id}}</td>
+            <td>{{res.name}}</td>
+            <td>{{res.email}}</td>
+            <td>{{res.occasion}}</td>
+            <td>{{res.partySize}}</td>
+            <td>{{res.time}}</td>
+            <td>{{res.phone}}</td>
+            <td>{{res.waitStatus}}</td>
+            <td>{{res.tableId}}</td>
+            <td>
+                <button class="btn btn-primary" title="Open Details">
+                    <span class="glyphicon glyphicon-share"></span>
+                    <span class="btn-text">Details</span>
+                </button>
+            </td>
+        </tr>
+
+
+
+        </tbody>
+
+    </table>
+
+</div>

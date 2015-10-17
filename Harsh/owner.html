@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Home</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="nav nav-justified">
+                <ul class="nav navbar-nav ">
+                    <li class="list">
+                        <div class="nav ">
+                            <a class="navbar-brand" href="#">
+                                <span class="glyphicon">   <img alt="Restaurant"  src="images/logo.jpg"> </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="navbar-nav nav" >
+                            <a href="ownerLogin.html" class="owner-login">Owner Login</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+<section>
+    <div class="container">
+
+        <div>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li><a href="#/reservations">Reservations</a></li>
+                    <li><a href="#/seating">Seating</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <hr>
+
+        <div class="container" ng-view>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<script src="https://code.angularjs.org/1.4.7/angular.js"></script>
+<script src="https://code.angularjs.org/1.4.7/angular-route.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/services/reservations.service.js"></script>
+<script src="app/controllers/reservations.controller.js"></script>
+
+
+</body>
+</html>
