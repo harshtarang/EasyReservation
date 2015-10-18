@@ -5,13 +5,8 @@
         <tr>
             <th>Confirmation No.</th>
             <th>Name</th>
-            <th>Email</th>
-            <th>Occasion</th>
             <th>#</th>
             <th>Date</th>
-            <th>Phone</th>
-            <th>Status</th>
-            <th>Table#</th>
             <th>Action</th>
         </tr>
         </thead>
@@ -20,20 +15,9 @@
         <tr ng-repeat="res in reservationsVm.reservations">
             <td>{{res.id}}</td>
             <td>{{res.name}}</td>
-            <td>{{res.email}}</td>
-            <td>{{res.occasion}}</td>
             <td>{{res.partySize}}</td>
             <td>{{res.time}}</td>
-            <td>{{res.phone}}</td>
-            <td>{{res.waitStatus}}</td>
-            <td>{{res.tableId}}</td>
-            <td><a ng-href="#/reservations/{{res.id}}"><span class="glyphicon glyphicon-zoom-in"></span></a></td>
-            <td>
-                <button ng-click="go('#/reservations/{{res.id}}')" class="btn btn-primary" title="Open Details">
-                    <span class="glyphicon glyphicon-share"></span>
-                    <span class="btn-text">Details</span>
-                </button>
-            </td>
+            <td><a ng-href="#/reservations/{{res.id}}"><button class="btn btn-primary">Details</button></a></td>
         </tr>
 
 

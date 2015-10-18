@@ -20,10 +20,25 @@
                 controller: 'ReservationDetailController',
                 controllerAs: 'resDetailVm'
             })
+            .when('/reservations/:resId/seating', {
+                templateUrl: 'app/views/seating.tmpl.html',
+                controller: 'SeatingController',
+                controllerAs: 'seatingVm'
+            })
             .when('/seating', {
-                templateUrl: 'pictures.tmpl.html',
-                controller: 'PicturesController',
-                controllerAs: 'picturesVm'
+                templateUrl: 'app/views/seating.tmpl.html',
+                controller: 'SeatingController',
+                controllerAs: 'seatingVm'
+            })
+            .when('/profile', {
+                templateUrl: 'app/views/profile.tmpl.html',
+                controller: 'ProfileController',
+                controllerAs: 'profileVm'
+            })
+            .when('/settings', {
+                templateUrl: 'app/views/settings.tmpl.html',
+                controller: 'SettingsController',
+                controllerAs: 'settingsVm'
             })
             .otherwise({
                 redirectTo: '/reservations'

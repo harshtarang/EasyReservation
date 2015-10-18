@@ -17,6 +17,7 @@
 
         self.getReservations=getReservations;
         self.getReservationById=getReservationById;
+        self.updateReservation=updateReservation;
 
         function getReservations()
         {
@@ -47,6 +48,27 @@
 
             $http
                 .get('http://localhost:8080/RestReservation/api/reservations/'+id)
+                .then(successFn,errorFn);
+
+            function successFn(response)
+            {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error)
+            {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+        }
+
+        function updateReservation(id,res)
+        {
+            var defer=$q.defer();
+
+            $http
+                .put('http://localhost:8080/RestReservation/api/reservations/'+id,res)
                 .then(successFn,errorFn);
 
             function successFn(response)
