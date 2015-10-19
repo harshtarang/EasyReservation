@@ -1,0 +1,76 @@
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: res_db
+-- ------------------------------------------------------
+-- Server version	5.5.44-0ubuntu0.14.04.1
+
+
+--
+-- Current Database: `res_db`
+--
+
+USE `res_db`;
+
+
+
+This project has the following tables
+
+TABLE 1> Reservations 
+
+CREATE TABLE res_db.reservations (
+  ID int(11) NOT NULL AUTO_INCREMENT,
+  FULL_NAME varchar(45) DEFAULT NULL,
+  EMAIL varchar(50) DEFAULT NULL,
+  OCCASION varchar(50) DEFAULT NULL,
+  PARTY_SIZE int(11) DEFAULT NULL,
+  PHONE varchar(10) DEFAULT NULL,
+  DATE_TIME DATETIME DEFAULT NULL,
+  WAIT_STATUS BOOL DEFAULT NULL,
+  CREATE_TIME DATETIME DEFAULT NULL,
+  TABLE_ID int(11) DEFAULT NULL,
+  PRIMARY KEY (ID)
+) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
+
+
+Reservations can be created from the front end.
+
+
+TABLE 2> Seating
+
+CREATE TABLE res_db.Seating (
+ID int(11) NOT NULL AUTO_INCREMENT,
+WAIT_STATUS BOOL DEFAULT FALSE,
+CREATE_TIME DATETIME DEFAULT NULL,
+RES_ID int(11) DEFAULT 0
+PRIMARY KEY (ID)) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+
+Create 5 tables by using the following statement 5 times -
+
+INSERT INTO Seating VALUES()
+
+
+TABLE 3> restProfile
+
+CREATE TABLE res_db.restProfile (
+ID int(11) DEFAULT 1,
+HOTEL_NAME varchar(45) DEFAULT NULL,
+EMAIL varchar(50) DEFAULT NULL,
+PHONE varchar(10) DEFAULT NULL,
+ADDRESS varchar(100) DEFAULT NULL,
+PRIMARY KEY (ID)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO res_db.restProfile (HOTEL_NAME,EMAIL,PHONE,ADDRESS) VALUES ('ABC Restaurant','abc@pqr.com','3332221111','Florida')
+
+
+TABLE > settings
+
+CREATE TABLE res_db.settings (
+ID int(11) NOT NULL AUTO_INCREMENT,
+AUTO_ASSIGN bool DEFAULT FALSE,
+PRIMARY KEY (ID)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO settings VALUES(true)
+
+
+-- Dump completed on 2015-10-19  5:15:29

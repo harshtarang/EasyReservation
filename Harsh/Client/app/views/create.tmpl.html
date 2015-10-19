@@ -1,0 +1,59 @@
+<section>
+    <div class="container text-center" id="main-container">
+        <h1 class="h1">Welcome to the World's worst restaurant</h1>
+
+
+        <div >
+            <div >
+                <form role="form" name="createResForm" ng-submit="reservationsVm.addRes(newRes)">
+            <div class="col-md-6 form-group">
+                <label for="name">Name</label>
+                <input type="text" ng-model="reservationsVm.newRes.name" class="form-control" id="name" placeholder="Enter your name">
+
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="partySize">Party Size</label>
+                <input type="text" ng-model="reservationsVm.newRes.partySize" class="form-control" id="partySize" placeholder="Number of people">
+
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="occasion">Occasion</label>
+                <input type="text" class="form-control" ng-model="reservationsVm.newRes.occasion" id="occasion" placeholder="e.g. Anniversary/Birthday">
+
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="date">Date</label>
+                <input type="datetime" ng-model="reservationsVm.newRes.time" class="form-control" id="date" placeholder="Format: MM-DD-YYYY HH:MM">
+
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label for="email">E-mail</label>
+                <input type="email" ng-model="reservationsVm.newRes.email" class="form-control" id="email" placeholder="E.g. john.doe@example.com">
+
+            </div>
+
+
+            <div class="col-md-6 form-group">
+                <label for="phone">Phone</label>
+                <input type="tel"  ng-model="reservationsVm.newRes.phone" class="form-control" id="phone" placeholder="E.g. 3524445555">
+
+            </div>
+
+            <div class="text-center form-group">
+                <button type="submit" class="btn btn-primary">Make Reservation</button>
+
+
+            </div>
+
+        </form>
+
+             </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
