@@ -9,8 +9,6 @@ In order to run this application,
 
 Things yet To be done:
 
-1. Implement login
-2. Correct the assign table bug
-3. Implement form validations
-4. Implement updating settings and profile
-5. Implement unit testing
+
+1. Correct the assign table bug
+2. Implement unit testing
