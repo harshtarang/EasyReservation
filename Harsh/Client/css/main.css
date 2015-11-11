@@ -1,0 +1,70 @@
+.top
+{
+    background-image: radial-gradient(circle at top left, black, grey);
+}
+
+
+
+#main-container
+{
+    max-width: 700px;
+}
+
+
+
+.owner-login
+{
+
+    font-size: large;
+
+}
+
+.navbar-brand
+{
+    padding: 5px;
+}
+
+.container
+{
+    max-height: 75px;
+}
+
+.list
+{
+
+    max-width:100px;
+}
+@media (min-width: 768px) {
+    .nav-justified {
+        height: 75px;
+    }
+}
+.navbar-brand span.glyphicon
+{
+    top: 5px;
+}
+
+.ownerLink
+{
+    font-size: larger;
+}
+
+
+section
+{
+    margin: 20px 0;
+}
+
+
+
+label,h3,th,h1,body
+{
+    color: #00F5FF;
+    font-size: large;
+}
+
+body
+{
+    background-image: url(../images/back3.jpg);
+    text-decoration-color: black;
+}

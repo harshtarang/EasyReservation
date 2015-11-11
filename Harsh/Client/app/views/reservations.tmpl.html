@@ -1,0 +1,30 @@
+<div class="container">
+    <h3>Reservations</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Confirmation No.</th>
+            <th>Name</th>
+            <th>#</th>
+            <th>Date</th>
+            <th class="text-center">Actions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="res in reservationsVm.reservations">
+            <td>{{res.id}}</td>
+            <td>{{res.name}}</td>
+            <td>{{res.partySize}}</td>
+            <td>{{res.time | date : 'medium'}}</td>
+            <td><a ng-href="#/reservations/{{res.id}}"><button class="btn btn-primary">Details</button></a></td>
+            <td><button class="btn btn-primary" ng-click="reservationsVm.deleteRes(res.id)">Delete</button></td>
+        </tr>
+
+
+
+        </tbody>
+
+    </table>
+
+</div>

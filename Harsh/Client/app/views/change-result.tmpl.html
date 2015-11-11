@@ -1,0 +1,53 @@
+<div class="container">
+    <h3>Reservation</h3>
+    <form role="form" name="updateResForm" ng-submit="resDetailVm.updateRes(resDetailVm.reservation)">
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">ID</label>
+            <div class="col-md-8">
+                <p class="form-control-static">{{resDetailVm.reservation.id}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">Name</label>
+            <div class="col-md-8">
+                <input type="text" ng-model="resDetailVm.reservation.name" class="form-control" id="name" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">Email</label>
+            <div class="col-md-8">
+                <input type="text" ng-model="resDetailVm.reservation.email" class="form-control" id="email" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">Occasion</label>
+            <div class="col-md-8">
+                <input type="text" ng-model="resDetailVm.reservation.occasion" class="form-control" id="occasion" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">Party Size</label>
+            <div class="col-md-8">
+                <input type="text" ng-model="resDetailVm.reservation.partySize" class="form-control" id="partySize" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label text-center">Date</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="resDetailVm.reservation.time" id="time" >
+            </div>
+        </div>
+
+
+        <div class="text-center">
+         <button type="submit" class="btn btn-primary">Update Changes</button>
+        </div>
+
+    </form>
+
+    </div>
